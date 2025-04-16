@@ -32,6 +32,7 @@ import org.apache.flink.util.OutputTag;
 public class DimApp {
     public static void main(String[] args) throws Exception {
 
+
         //TODO 1.获取执行环境
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         env.setParallelism(1);  //生成环境设置为Kafka主题的分区数
@@ -94,6 +95,7 @@ public class DimApp {
         hbaseDS.addSink(new DimSinkFunction());
         //TODO 9.启动任务
         env.execute("DimApp");
+
 
     }
 }

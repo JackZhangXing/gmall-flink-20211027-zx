@@ -45,5 +45,7 @@ public class TimestampLtz3CompareUtil {
 
         System.out.println(compare("2022-04-01 11:10:55.045Z",
                 "2022-04-01 11:10:55.04Z"));
+
+        System.out.println("helloword!");
     }
 }
